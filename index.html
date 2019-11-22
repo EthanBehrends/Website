@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>You Go Girl Alliance</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="logo">
+      <img src="Assets/logo.png" />
+    </div>
+    <div id="body">
+      <p>Interested in joining the <i>You Go Girl Alliance</i>? After filling out this form, Team 1710’s You Go Girl Ambassador will get in touch and supply you with further information about You Go Girl and the You Go Girl Alliance. From here, you
+        can begin registering your FRC team as a member of the alliance. We are very excited to welcome your team into the alliance!</p>
+      <form id="emailform" action="send_email.php" method="post">
+        <div class="half">
+          <input id="number" name="teamnum" class="gray" type="number" max="100000">
+
+        </input>
+          <h6>Team Number</h6>
+        </div>
+        <div class="half">
+          <input id="name" name="name" class="gray" type="text">
+
+        </input>
+          <h6>Name</h6>
+        </div>
+        <div class="full">
+          <input id="email" name="email" class="gray" type="email">
+
+        </input>
+          <h6>Email</h6>
+        </div>
+        <input id="submit" type="submit" class="gray">
+      </form>
+      <p id="err">Please fill out all forms</p>
+      <p id="thanks">Thanks for filling out this form! We'll be in touch soon!</p>
+    </div>
+  </div>
+</body>
+
+</html>
